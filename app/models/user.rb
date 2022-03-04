@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_one :profile
   has_one :location, through: :profile
+  has_many :listings
 
   accepts_nested_attributes_for :profile
 
